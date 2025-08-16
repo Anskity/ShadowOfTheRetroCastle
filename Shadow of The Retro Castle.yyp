@@ -1,0 +1,47 @@
+{
+  "$GMProject":"v1",
+  "%Name":"Shadow of The Retro Castle",
+  "AudioGroups":[
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+  "configs":{
+    "children":[],
+    "name":"Default",
+  },
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"Engine","folderPath":"folders/Engine.yy","name":"Engine","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
+  "ForcedPrefabProjectReferences":[],
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.13.1.193",
+  },
+  "name":"Shadow of The Retro Castle",
+  "resources":[
+    {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
+    {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},},
+    {"id":{"name":"obj_wizard","path":"objects/obj_wizard/obj_wizard.yy",},},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"scr_angle","path":"scripts/scr_angle/scr_angle.yy",},},
+    {"id":{"name":"scr_assert","path":"scripts/scr_assert/scr_assert.yy",},},
+    {"id":{"name":"scr_character_controller","path":"scripts/scr_character_controller/scr_character_controller.yy",},},
+    {"id":{"name":"scr_staff_controller","path":"scripts/scr_staff_controller/scr_staff_controller.yy",},},
+    {"id":{"name":"scr_timer","path":"scripts/scr_timer/scr_timer.yy",},},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},},
+    {"id":{"name":"spr_staff","path":"sprites/spr_staff/spr_staff.yy",},},
+    {"id":{"name":"spr_wizard","path":"sprites/spr_wizard/spr_wizard.yy",},},
+  ],
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+  ],
+  "templateType":"game",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+}
