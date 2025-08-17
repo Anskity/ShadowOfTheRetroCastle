@@ -22,6 +22,7 @@
   "name":"Shadow of The Retro Castle",
   "resources":[
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
+    {"id":{"name":"obj_demon_head","path":"objects/obj_demon_head/obj_demon_head.yy",},},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},},
     {"id":{"name":"obj_wizard","path":"objects/obj_wizard/obj_wizard.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
