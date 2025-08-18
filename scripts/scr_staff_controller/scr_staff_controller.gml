@@ -1,7 +1,7 @@
 function StaffController(inst) constructor {
     update = function() {
         var target_dir = point_direction(__inst.x, __inst.y-6, mouse_x, mouse_y);
-        __dir = lerp_angle(__dir, target_dir, .1);
+        __dir = lerp_angle(__dir, target_dir, .2);
 
         if mouse_check_button(mb_left) && __can_shoot {
             var staff_pos = __get_staff_pos();
