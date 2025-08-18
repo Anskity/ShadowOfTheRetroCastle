@@ -6,11 +6,11 @@ function self_split(){
 	
 	if split_delay <= 0 {
 		instance_destroy();
-		repeat 2 {
+		repeat 3 {
 			var dir = random(359)
 			var split = instance_create_depth(x, y, depth, obj_demon_head_bullet_mini);
 			split.direction = dir;
-			split.speed = 3;
+			split.speed = 2.5;
 		}
 	}
 }
