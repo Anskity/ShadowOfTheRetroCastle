@@ -1,3 +1,4 @@
+y += sin(current_time*.005) * 1;
 if has_attack {
     var res = attack.update();
     if res {

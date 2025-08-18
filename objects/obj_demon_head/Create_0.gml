@@ -9,13 +9,15 @@ attack = {};
 delete attack;
 
 next_attack = function() {
-    var possibilities = [
-        1,
-        2,
-        3,
-    ];
-    if current_attack != -1 {
-        array_delete(possibilities, current_attack-1, 1);
+    var possibilities = [];
+    if current_attack != 1 {
+        array_push(possibilities, 1);
+    }
+    if current_attack != 2 {
+        array_push(possibilities, 2);
+    }
+    if current_attack != 3 && life < 500 {
+        array_push(possibilities, 3);
     }
     current_attack = array_rand(possibilities);
 	

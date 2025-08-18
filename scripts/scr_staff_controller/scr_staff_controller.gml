@@ -12,7 +12,7 @@ function StaffController(inst) constructor {
             var shoot_x = staff_x + lengthdir_x(staff_w, __dir);
             var shoot_y = staff_y + lengthdir_y(staff_w, __dir);
 
-            instance_create_depth(shoot_x, shoot_y, 0, obj_bullet, {dir: __dir, damage: 130});
+            instance_create_depth(shoot_x, shoot_y, 0, obj_bullet, {dir: __dir, damage: 13});
             __can_shoot = false;
         }
 

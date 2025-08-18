@@ -37,6 +37,11 @@ function CharacterController(inst) constructor {
         }
         __inst.y += __vsp;
     }
+    
+    apply_force = function(hsp, vsp) {
+        __hsp += hsp;
+        __vsp += vsp;
+    }
 
     __inst = inst;
     __hsp = 0;
