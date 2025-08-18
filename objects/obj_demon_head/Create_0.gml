@@ -11,7 +11,7 @@ next_attack = function() {
 	
 	switch choose_next_attack {
 		case 0:
-			attack = new DemonHeadAttack2(id); 
+			attack = new DemonHeadAttack1(id); 
 		break;
 		
 		case 1:
