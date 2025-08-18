@@ -1,3 +1,12 @@
+var dir = point_direction(x, y, target_x, target_y);
+if !started {
+    image_angle = lerp_angle(image_angle, dir, .1);
+    if angle_difference(image_angle, dir) < 1 {
+        started = true;
+    }
+    owner.image_angle = image_angle + 90;
+    exit;
+}
 if back {
     image_xscale = lerp(image_xscale, 0, .3);
 
@@ -15,10 +24,12 @@ if exiting {
 
 var size = 0;
 var max_dist = room_width;
-var dir = point_direction(x, y, target_x, target_y);
+
 image_angle = dir;
-var sine_cache = dsin(dir);
-var cosine_cache = dcos(dir);
+
+x = owner.x + lengthdir_x(44, image_angle);
+y = owner.y + lengthdir_y(44, image_angle);
+owner.image_angle = image_angle + 90;
 
 repeat max_dist {
     size += 1;
@@ -28,7 +39,6 @@ repeat max_dist {
     }
 }
 
-var margin = 69*2.4+13;
 if target_x < -margin || target_x > room_width+margin {
     if exiting {
         back = true;

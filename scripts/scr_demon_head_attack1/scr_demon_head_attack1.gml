@@ -7,4 +7,6 @@ function DemonHeadAttack1(inst) constructor {
 
     __inst = inst;
     __laser = instance_create_depth(__inst.x, __inst.y, 0, obj_demon_head_laser);
+    __laser.owner = __inst;
+    __laser.depth = __inst.depth-1;
 }
