@@ -3,7 +3,7 @@ function CharacterController(inst) constructor {
         var move_x = -keyboard_check(ord("A"))+keyboard_check(ord("D"));
         
         if move_x != 0 {
-            __hsp = lerp(__hsp, move_x*4, .1);
+            __hsp = lerp(__hsp, move_x*3, .1);
         } else {
             __hsp = lerp(__hsp, 0, .3);
         }
