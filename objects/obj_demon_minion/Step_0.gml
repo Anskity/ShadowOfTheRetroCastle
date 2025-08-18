@@ -1,4 +1,4 @@
-var base_angle = lerp(180, 360, ((current_time*.0005) % 1)*2 - 1);
+var base_angle = 270 + 90*sin(current_time*.002);
 var minion_amt = instance_number(obj_demon_minion);
 var target_angle = base_angle;// + 360/minion_amt*minion_idx;
 image_angle = target_angle+90+180;

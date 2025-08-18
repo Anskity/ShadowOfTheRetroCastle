@@ -4,18 +4,30 @@ take_damage = function(damage) {
     life -= damage;
 }
 
+current_attack = -1;
 attack = {};
 delete attack;
+
 next_attack = function() {
-	var choose_next_attack = choose(0, 1);
+    var possibilities = [
+        1,
+        2,
+        3,
+    ];
+    if current_attack != -1 {
+        array_delete(possibilities, current_attack-1, 1);
+    }
+    current_attack = array_rand(possibilities);
 	
-	switch choose_next_attack {
-		case 0:
-			attack = new DemonHeadAttack2(id); 
-		break;
-		
+	switch current_attack {
 		case 1:
+			attack = new DemonHeadAttack1(id);
+		break;
+		case 2:
 			attack = new DemonHeadAttack2(id);
+		break;
+		case 3:
+			attack = new DemonHeadAttack3(id);
 		break;
 	}
 	
