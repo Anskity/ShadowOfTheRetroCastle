@@ -1,6 +1,7 @@
 timer.tick();
-transition = approach(transition, active, 1/GAME_SPEED/.5);
+transition = approach(transition, active, 1/GAME_SPEED/.2);
 image_yscale = transition;
+y = lerp(y, ystart - 7, 0.1);
 
 attack_wizard();
 
