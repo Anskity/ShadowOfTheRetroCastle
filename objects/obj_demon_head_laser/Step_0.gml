@@ -45,3 +45,5 @@ if target_x < -margin || target_x > room_width+margin {
     }
     exiting = true;
 }
+
+attack_wizard();

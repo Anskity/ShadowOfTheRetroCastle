@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Shadow of The Retro Castle",
-    "path":"Shadow of The Retro Castle.yyp",
+    "name":"DemonHead",
+    "path":"folders/DemonHead.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ghost_attack_3",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ghost_attack_3",
+  "parent":{
+    "name":"Ghost",
+    "path":"folders/Ghost.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

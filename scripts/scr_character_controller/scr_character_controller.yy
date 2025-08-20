@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_character_controller",
   "parent":{
-    "name":"Shadow of The Retro Castle",
-    "path":"Shadow of The Retro Castle.yyp",
+    "name":"Wizard",
+    "path":"folders/Wizard.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

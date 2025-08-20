@@ -10,8 +10,8 @@
   "name":"obj_demon_head",
   "overriddenProperties":[],
   "parent":{
-    "name":"Shadow of The Retro Castle",
-    "path":"Shadow of The Retro Castle.yyp",
+    "name":"DemonHead",
+    "path":"folders/DemonHead.yy",
   },
   "parentObjectId":null,
   "persistent":false,

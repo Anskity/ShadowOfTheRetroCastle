@@ -10,8 +10,8 @@
   "name":"obj_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Shadow of The Retro Castle",
-    "path":"Shadow of The Retro Castle.yyp",
+    "name":"Wizard",
+    "path":"folders/Wizard.yy",
   },
   "parentObjectId":null,
   "persistent":false,

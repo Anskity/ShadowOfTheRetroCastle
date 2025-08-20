@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"Shadow of The Retro Castle",
-    "path":"Shadow of The Retro Castle.yyp",
+    "name":"Wizard",
+    "path":"folders/Wizard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

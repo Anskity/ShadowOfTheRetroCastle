@@ -8,5 +8,19 @@ self.apply_force = function(hsp, vsp) {
 character_controller = new CharacterController(id);
 staff_controller = new StaffController(id);
 
+invencible = false;
+invencible_timer = new Timer(.5, function() {
+    invencible = false;
+});
+
 // oi
 // Hola
+
+life = 10;
+take_damage = function() {
+    if invencible {
+        return;
+    }
+    life -= 1;
+    invencible = true;
+}
