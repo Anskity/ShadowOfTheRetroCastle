@@ -15,4 +15,5 @@ function ResolutionManager() constructor {
     window_center();
 
     surface_resize(application_surface, __window_w, __window_h);
+    display_set_gui_size(640, 360);
 }

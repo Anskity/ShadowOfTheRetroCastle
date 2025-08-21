@@ -5,6 +5,10 @@ if instance_exists(char) {
 		target.just_touched = true;
 		char.x = target.x;
 		char.y = target.y;
+
+        char.character_controller.reset();
+        var face = char.get_face();
+        char.apply_force(face*12, -3);
 	}
 } else {
 	just_touched = false;

@@ -4,6 +4,7 @@ function CharacterController(inst) constructor {
         
         if move_x != 0 {
             __hsp = lerp(__hsp, move_x*3, .1);
+            __face = move_x;
         } else {
             __hsp = lerp(__hsp, 0, .3);
         }
@@ -38,12 +39,21 @@ function CharacterController(inst) constructor {
         __inst.y += __vsp;
     }
     
+    reset = function() {
+        __hsp = 0;
+        __vsp = 0;
+    }
     apply_force = function(hsp, vsp) {
         __hsp += hsp;
         __vsp += vsp;
     }
 
+    get_face = function() {
+        return __face;
+    }
+
     __inst = inst;
+    __face = 1;
     __hsp = 0;
     __vsp = 0;
 }

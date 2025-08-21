@@ -16,7 +16,7 @@ invencible_timer = new Timer(.5, function() {
 // oi
 // Hola
 
-life = 10;
+life = 5;
 take_damage = function() {
     if invencible {
         return;
@@ -24,3 +24,9 @@ take_damage = function() {
     life -= 1;
     invencible = true;
 }
+
+get_face = function() {
+    return character_controller.get_face();
+}
+
+health_bar = new Healthbar({life});
