@@ -1,5 +1,5 @@
 active = true;
-timer = new Timer(1, function() {
+timer = new Timer(.75, function() {
 	active = false;
 });
 transition = 0;

@@ -19,7 +19,7 @@ if back {
     exit;
 }
 if exiting {
-    target_x -= (24 + 2.4) * self.dir;
+    target_x -= (24 + 2.6) * self.dir;
 } else {
     target_x += 4 * self.dir;
 }

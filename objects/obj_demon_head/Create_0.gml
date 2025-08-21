@@ -1,4 +1,4 @@
-life = 500;
+life = 5;
 
 take_damage = function(damage) {
     life -= damage;
