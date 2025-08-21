@@ -3,14 +3,15 @@ if has_collided {
     timer.tick();
 
     if going_up {
-        vsp -= .03;
+		image_angle += sin(current_time*.005) * .5;
+        vsp -= .04;
     }
 } else {
-    vsp += .07;
+    vsp += 1;
 }
 
 if place_meeting(x, y+vsp, obj_solid) {
-    y = vsp > 0 ? floor(y) : ceil(y);
+    y = vsp > 0 ? floor(y) : ceil(y) - 12;
     has_collided = true;
 
     while !place_meeting(x, y+sign(vsp), obj_solid) {

@@ -14,7 +14,7 @@ function GhostAttack2(inst) constructor {
 
     __inst = inst;
     
-    repeat 10 {
+    repeat 8 {
         instance_create_depth(__inst.x, __inst.y, __inst.depth-1, obj_ghost_xuriken);
     }
 }

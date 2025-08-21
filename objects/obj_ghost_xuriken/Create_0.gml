@@ -1,4 +1,7 @@
-attack_timer = new Timer(4 + instance_number(obj_ghost_xuriken)*.25, function() {
+image_xscale = 0;
+image_yscale = 0;
+
+attack_timer = new Timer(3 + instance_number(obj_ghost_xuriken)*.05, function() {
 	if !instance_exists(obj_wizard) {
 		return;
 	}
@@ -12,7 +15,7 @@ attacking = false;
 
 get_orbit_pos = function() {
 	var dir = (current_time*.2) % 360 + 360*(idx/instance_number(obj_ghost_xuriken));
-	var dist = 96;
+	var dist = 128;
 	var pos_x = obj_ghost.x + lengthdir_x(dist, dir);
 	var pos_y = obj_ghost.y + lengthdir_y(dist, dir);
 	

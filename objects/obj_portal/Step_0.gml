@@ -13,3 +13,5 @@ if instance_exists(char) {
 } else {
 	just_touched = false;
 }
+
+image_angle += 4;
