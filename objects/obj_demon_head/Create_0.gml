@@ -1,6 +1,9 @@
 life = 500;
 
 take_damage = function(damage) {
+    if instance_exists(obj_demon_minion) {
+        return;
+    }
     life -= damage;
 }
 
