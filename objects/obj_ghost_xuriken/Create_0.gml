@@ -1,4 +1,4 @@
-attack_timer = new Timer(4, function() {
+attack_timer = new Timer(4 + instance_number(obj_ghost_xuriken)*.25, function() {
 	if !instance_exists(obj_wizard) {
 		return;
 	}

@@ -11,3 +11,7 @@ if has_attack {
         next_attack();
     }
 }
+
+if life <= 0 {
+    room_goto(rm_ghost);
+}

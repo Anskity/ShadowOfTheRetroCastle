@@ -1,3 +1,5 @@
+attack_wizard();
+
 var dir = point_direction(x, y, target_x, target_y);
 if !started {
     image_angle = lerp_angle(image_angle, dir, .1);
@@ -46,4 +48,3 @@ if target_x < -margin || target_x > room_width+margin {
     exiting = true;
 }
 
-attack_wizard();
