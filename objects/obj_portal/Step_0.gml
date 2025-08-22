@@ -8,7 +8,7 @@ if instance_exists(char) {
 
         char.character_controller.reset();
         var face = char.get_face();
-        char.apply_force(face*12, -3);
+        char.apply_force(face*8, -3);
 	}
 } else {
 	just_touched = false;

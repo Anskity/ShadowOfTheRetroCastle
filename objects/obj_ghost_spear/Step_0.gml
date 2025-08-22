@@ -1,13 +1,25 @@
-attack_wizard();
+if y < 0 && has_collided {
+    instance_destroy();
+}
+
+down_timer.tick();
+
 if has_collided {
     timer.tick();
 
     if going_up {
+		image_alpha = lerp(image_alpha, 0, .02);
 		image_angle += sin(current_time*.005) * .5;
         vsp -= .04;
     }
 } else {
-    vsp += 1;
+	image_alpha = lerp(image_alpha, 1, .1);
+	if going_down {
+		attack_wizard();
+		vsp += 1.2;
+	} else {
+		y = lerp(y, ystart - 12, 0.05);	
+	}
 }
 
 if place_meeting(x, y+vsp, obj_solid) {
@@ -22,7 +34,3 @@ if place_meeting(x, y+vsp, obj_solid) {
 }
 
 y += vsp;
-
-if y < -64 && has_collided {
-    instance_destroy();
-}

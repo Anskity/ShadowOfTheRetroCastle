@@ -12,11 +12,12 @@ function Healthbar(config) constructor {
         var bar_xscale = width / sprite_get_width(spr_healthbar);
 
         GET_GUI_SIZE;
-        var pos_y = ceil(gui_h*.9);
+        var pos_y = ceil(gui_h*.9)
         draw_sprite_ext(spr_healthbar, 0, gui_w/2, pos_y, bar_xscale, 1, 0, c_white, 1);
 
         for (var i = 0; i < __life; i++) {
             var pos_x = gui_w/2 - heart_area/2 + heart_area*(i+.5)/__life;
+			pos_y += + sin(current_time*.005 + (pos_x)) * 1.25;
             draw_sprite(spr_heart, 0, pos_x, pos_y);
         }
     }

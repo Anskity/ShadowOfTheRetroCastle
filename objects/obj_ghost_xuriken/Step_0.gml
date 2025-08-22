@@ -1,3 +1,5 @@
+attack_timer.tick();
+
 var did_hit = attack_wizard();
 if did_hit {
     instance_destroy();
@@ -21,5 +23,5 @@ image_angle += 12;
 image_xscale = lerp(image_xscale, 1, 0.1);
 image_yscale = image_xscale;
 
-attack_timer.tick();
+
 

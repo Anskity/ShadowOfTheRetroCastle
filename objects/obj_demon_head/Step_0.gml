@@ -13,5 +13,6 @@ if has_attack {
 }
 
 if life <= 0 {
+	show_message("Derrotou o Demoncrânio!");
     room_goto(rm_ghost);
 }

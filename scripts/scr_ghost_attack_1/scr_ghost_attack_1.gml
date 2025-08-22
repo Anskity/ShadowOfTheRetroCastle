@@ -44,20 +44,20 @@ function GhostAttack1(inst) constructor {
             __spawn_timer.tick();
         }
 
-        return __leftovers <= 0;
-    }
+        return __leftovers = 0;
+	}
 
     __inst = inst;
-    __spawn_timer = new Timer(.4, function() {
-        __leftovers -= 1;
+    __spawn_timer = new Timer(.3, function() {
+        if __leftovers > 0 { __leftovers -= 1; };
         var spr_h = sprite_get_height(spr_ghost_spear);
         var pos_x = __is_left ? random(GHOST_ISLAND_MARGIN) : room_width-random(GHOST_ISLAND_MARGIN);
-        instance_create_depth(pos_x, -spr_h, 0, obj_ghost_spear);
+        instance_create_depth(pos_x, spr_h, __inst.depth, obj_ghost_spear);
     });
     __start_timer = new Timer(1, function() {
         __started = true;
     });
     __started = false;
-    __leftovers = 7;
+    __leftovers = 9;
     __is_left = choose(true, false);
 }

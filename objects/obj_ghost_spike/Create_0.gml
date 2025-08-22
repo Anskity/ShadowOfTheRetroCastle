@@ -4,3 +4,4 @@ timer = new Timer(.75, function() {
 });
 transition = 0;
 image_yscale = 0;
+image_alpha = 0;

@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"spr_ghost_spear",
-  "bboxMode":0,
-  "bbox_bottom":67,
+  "bboxMode":2,
+  "bbox_bottom":53,
   "bbox_left":0,
   "bbox_right":17,
   "bbox_top":0,

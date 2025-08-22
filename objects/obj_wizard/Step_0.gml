@@ -6,3 +6,8 @@ health_bar.update(life);
 
 x = clamp(x, 0, room_width);
 y = clamp(y, 0, room_width);
+
+if life <= 0 {
+	//show_message("Morreu! :(");
+	//room_restart();
+}

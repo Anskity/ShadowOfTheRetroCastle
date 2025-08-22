@@ -1,3 +1,5 @@
+invencible();
+
 x += sin(current_time*.005);
 y += cos(current_time*.01);
 
@@ -11,3 +13,7 @@ if has_attack {
     next_attack();
 }
 
+if life <= 0 {
+	show_message("Derrotou o Fantasmagórico!");
+	game_restart();
+}

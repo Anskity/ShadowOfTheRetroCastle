@@ -1,8 +1,26 @@
 life = 400;
 
+invencible = function(){
+	if instance_exists(obj_ghost_xuriken) {
+		if obj_ghost_xuriken.attacking = false {
+			image_alpha = lerp(image_alpha, .5, .05);
+			image_angle += cos(current_time*.005);
+			return true;
+		} else {
+			image_alpha = lerp(image_alpha, 1, .1);
+			image_angle = lerp(image_angle, 1, .1);
+			return false;	
+		} 
+	}
+}
+
 take_damage = function(damage) {
+	if invencible(){
+		return;	
+	}
 	life -= damage;
 }
+
 
 right_hand_x = x;
 right_hand_y = y;
