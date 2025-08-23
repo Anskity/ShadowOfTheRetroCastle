@@ -12,7 +12,7 @@ attacking = false;
 spin_spd = 0;
 
 get_orbit_pos = function() {
-	spin_spd = lerp(spin_spd, 1, 0.05)
+	spin_spd = lerp(spin_spd, 1, .075)
 	
 	var dir = (current_time*.2) % 360 + 360*(idx/instance_number(obj_ghost_xuriken));
 	var dist = 128;

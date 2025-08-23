@@ -19,9 +19,11 @@ if back {
     exit;
 }
 if exiting {
-    target_x -= (24 + 2.6) * self.dir;
+	target_x_dir = lerp(target_x_dir, (30 + 2.6) * self.dir, .9);
+    target_x -= target_x_dir;
 } else {
-    target_x += 4 * self.dir;
+	target_x_dir = lerp(target_x_dir, 6 * self.dir, .5);
+    target_x += target_x_dir;
 }
 
 var size = 0;

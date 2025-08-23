@@ -9,7 +9,7 @@ character_controller = new CharacterController(id);
 staff_controller = new StaffController(id);
 
 invencible = false;
-invencible_timer = new Timer(.5, function() {
+invencible_timer = new Timer(1, function() {
     invencible = false;
 });
 
@@ -18,11 +18,10 @@ invencible_timer = new Timer(.5, function() {
 
 life = 5;
 take_damage = function() {
-    if invencible {
-        return;
+    if invencible = false {
+        life -= 1;
+		invencible = true;
     }
-    life -= 1;
-    invencible = true;
 }
 
 get_face = function() {
