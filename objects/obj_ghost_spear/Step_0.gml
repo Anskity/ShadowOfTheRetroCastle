@@ -23,7 +23,7 @@ if has_collided {
 }
 
 if place_meeting(x, y+vsp, obj_solid) {
-    y = vsp > 0 ? floor(y) : ceil(y) - 12;
+    y = vsp > 0 ? floor(y) : ceil(y);
     has_collided = true;
 
     while !place_meeting(x, y+sign(vsp), obj_solid) {
