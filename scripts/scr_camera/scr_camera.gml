@@ -2,6 +2,12 @@ function ResolutionManager() constructor {
     update = function() {
         if keyboard_check_pressed(vk_f11) {
             window_set_fullscreen(!window_get_fullscreen());
+
+            if window_get_fullscreen() {
+                surface_resize(application_surface, display_get_width(), display_get_height());
+            } else {
+                surface_resize(application_surface, __window_w, __window_h);
+            }
         }
     }
 
