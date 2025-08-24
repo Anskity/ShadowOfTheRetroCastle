@@ -1,7 +1,7 @@
 /// @description Initialize
 
 #region Function definitions
-
+application_surface_draw_enable(0);
 function get_mouse_coords()
 {
     var intScale = 1.0 + (crt.do_int_scale * (-1.0 + crt.display_height / (crt.game_height * floor(crt.display_height / crt.game_height))));
@@ -60,8 +60,8 @@ function resize_surfaces()
 	camera_set_view_size(view_get_camera(0), game_width, game_height);
 
 	// Ensure the application and GUI surfaces are the size of the display
-	surface_resize(application_surface, display_width, display_height);
-	display_set_gui_size(display_width, display_height);
+	//surface_resize(application_surface, display_width, display_height);
+	//display_set_gui_size(display_width, display_height);
 
 	// Disable automatic drawing of the application surface
 	application_surface_draw_enable(false);

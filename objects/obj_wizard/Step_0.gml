@@ -23,3 +23,19 @@ if invencible {
 } else {
 	image_alpha = lerp(image_alpha, 1, .1);
 }
+
+if !surface_exists(hud_surf) {
+    GET_GUI_SIZE;
+    hud_surf = surface_create(gui_w, gui_h);
+}
+surface_set_target(hud_surf);
+
+draw_clear_alpha(0,0);
+health_bar.render();
+surface_reset_target();
+
+flash_manager.update();
+
+if keyboard_check_pressed(vk_tab) {
+    ResolutionManager.screenshake(2);
+}

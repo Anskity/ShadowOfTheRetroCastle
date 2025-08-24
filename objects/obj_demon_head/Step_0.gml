@@ -12,7 +12,7 @@ if has_attack {
 }
 
 if life <= 0 {
-    room_goto(rm_ghost);
+    room_transition(rm_selection);
 }
 
 if instance_exists(obj_demon_minion){
@@ -23,3 +23,5 @@ if instance_exists(obj_demon_minion){
 	image_index = 0;
 	y += sin(current_time*.005) * 1;
 }
+
+flash_manager.update();

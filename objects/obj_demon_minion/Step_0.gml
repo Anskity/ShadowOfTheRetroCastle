@@ -18,3 +18,4 @@ if instance_exists(wizard) {
 if life <= 0 || owner.life >= 500 {
     instance_destroy();
 }
+flash_manager.update();

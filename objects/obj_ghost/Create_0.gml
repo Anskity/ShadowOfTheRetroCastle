@@ -19,6 +19,8 @@ take_damage = function(damage) {
 		return;	
 	}
 	life -= damage;
+
+    flash_manager.notify();
 }
 
 
@@ -78,3 +80,5 @@ default_hand_shake = function() {
     left_hand_x = lerp(left_hand_x, left_x, .3);
     left_hand_y = lerp(left_hand_y, left_y, .3);
 }
+
+flash_manager = new FlashManager();
