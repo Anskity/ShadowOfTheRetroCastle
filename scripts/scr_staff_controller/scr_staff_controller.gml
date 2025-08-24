@@ -33,7 +33,7 @@ function StaffController(inst) constructor {
         var staff_x = staff_pos[0];
         var staff_y = staff_pos[1];
 
-        draw_sprite_ext(spr_staff, 0, staff_x, staff_y, 1, 1, __dir, c_white, 1);
+        draw_sprite_ext(spr_staff, 0, staff_x, staff_y, 1, 1, __dir, c_white, __inst.image_alpha);
     }
 
     __inst = inst;

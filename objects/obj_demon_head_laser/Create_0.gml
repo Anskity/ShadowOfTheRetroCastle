@@ -9,3 +9,5 @@ exiting = false;
 owner = noone;
 image_angle = 270;
 image_xscale = 0;
+
+target_x_dir = 0;

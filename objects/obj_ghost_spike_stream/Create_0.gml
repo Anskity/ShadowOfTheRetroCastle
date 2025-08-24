@@ -1,7 +1,13 @@
 assert_exists(self[$ "dir"]);
 dir = self[$ "dir"] ?? 0;
 
-move_timer = new Timer(.2, function() {
+inst_create_time = .3;
+inst_create_time_frac = .015;
+
+move_timer = new Timer(inst_create_time, function() {
+	move_timer.set_max(inst_create_time - inst_create_time_frac);
+	inst_create_time -= inst_create_time_frac;
+	
 	var pos_y = room_height-1;
 	while position_meeting(x+8, pos_y, obj_solid) {
 		pos_y -= 1;
