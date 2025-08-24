@@ -18,7 +18,6 @@ if life <= 0 {
 if instance_exists(obj_demon_minion){
 	image_index = 3;
 	y += sin(current_time*.005) * 0.5;
-	image_angle += sin(pi*(current_time*.005)) * 0.5;
 } else {
 	image_index = 0;
 	y += sin(current_time*.005) * 1;
