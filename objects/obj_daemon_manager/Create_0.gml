@@ -1,3 +1,3 @@
 daemons = [
-	new ResolutionManager(),
+	ResolutionManager,
 ];

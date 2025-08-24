@@ -5,6 +5,7 @@ take_damage = function(damage) {
         return;
     }
     life -= damage;
+    flash_manager.notify();
 }
 
 current_attack = -1;
@@ -41,4 +42,6 @@ next_attack = function() {
 next_attack();
 
 has_attack = true;
+
+flash_manager = new FlashManager();
 

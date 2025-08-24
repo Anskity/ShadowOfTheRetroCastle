@@ -1,4 +1,11 @@
+var flash = flash_manager.get();
+
+if flash {
+    shader_set(shd_color_overlay);
+}
+
 draw_self();
+
+shader_reset();
 staff_controller.render();
-// draw_text(x, y, life);
 

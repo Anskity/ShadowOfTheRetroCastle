@@ -1,5 +1,7 @@
 /// @description Initialize
 
+application_surface_draw_enable(false);
+
 #region Function definitions
 
 function get_mouse_coords()

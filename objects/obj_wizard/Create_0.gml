@@ -22,6 +22,8 @@ take_damage = function() {
         life -= 1;
 		invencible = true;
     }
+
+    flash_manager.notify();
 }
 
 get_face = function() {
@@ -29,3 +31,7 @@ get_face = function() {
 }
 
 health_bar = new Healthbar({life});
+
+hud_surf = -1;
+
+flash_manager = new FlashManager();
