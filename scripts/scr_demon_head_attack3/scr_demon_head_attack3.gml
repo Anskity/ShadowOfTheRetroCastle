@@ -12,6 +12,6 @@ function DemonHeadAttack3(inst) constructor {
     __minion.depth = __inst.depth-1;
 
     __heal_timer = new Timer(1, function() {
-        __inst.life += 1;
+        __inst.life += 0;
     });
 }

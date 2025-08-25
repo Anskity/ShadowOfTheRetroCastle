@@ -20,10 +20,11 @@ next_attack = function() {
     if current_attack != 2 {
         array_push(possibilities, 2);
     }
-    if current_attack != 3 && life < 500 {
+    if current_attack != 3 {
         array_push(possibilities, 3);
     }
     current_attack = array_rand(possibilities);
+	//current_attack = 3;
 	
 	switch current_attack {
 		case 1:

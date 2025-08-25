@@ -1,7 +1,9 @@
+bullet_time.tick();
+
 var base_angle = 270 + 130*sin(current_time*.001);
 var minion_amt = instance_number(obj_demon_minion);
 var target_angle = base_angle;// + 360/minion_amt*minion_idx;
-image_angle = target_angle+90+180;
+image_angle = target_angle+90;
 
 var dist = 140;
 var target_x = owner.x + lengthdir_x(dist, target_angle);

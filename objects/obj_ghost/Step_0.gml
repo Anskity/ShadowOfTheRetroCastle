@@ -16,7 +16,6 @@ if has_attack {
 flash_manager.update();
 
 if life <= 0 {
-	show_message("Derrotou o Fantasmagórico!");
 	game_restart();
 }
 

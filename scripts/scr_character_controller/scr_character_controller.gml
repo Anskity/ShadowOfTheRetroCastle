@@ -10,13 +10,23 @@ function CharacterController(inst) constructor {
         }
 
         var on_ground = __inst.place_meeting(__inst.x, __inst.y+1, obj_solid);
+		
+		if entered_portal = true {
+			__grav = .15;
+		} 
+		
+		if __grav != .2 {
+			__grav = lerp(__grav, .2, .1);	
+		}
 
         if on_ground {
+			__grav = .2;
+			entered_portal = false;
             if keyboard_check(vk_space) {
                 __vsp = -4;
             }
         } else {
-            __vsp += .2;
+            __vsp += __grav;
         }
 
         var in_solid = __inst.place_meeting(__inst.x, __inst.y, obj_solid);
@@ -56,4 +66,6 @@ function CharacterController(inst) constructor {
     __face = 1;
     __hsp = 0;
     __vsp = 0;
+	__grav = 0;
+	entered_portal = false;
 }
