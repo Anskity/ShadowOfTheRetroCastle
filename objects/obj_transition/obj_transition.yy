@@ -11,8 +11,8 @@
   "name":"obj_transition",
   "overriddenProperties":[],
   "parent":{
-    "name":"Shadow of The Retro Castle",
-    "path":"Shadow of The Retro Castle.yyp",
+    "name":"Transition",
+    "path":"folders/Transition.yy",
   },
   "parentObjectId":null,
   "persistent":true,

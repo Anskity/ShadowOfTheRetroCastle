@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_transition",
+  "%Name":"scr_sfx",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_transition",
+  "name":"scr_sfx",
   "parent":{
-    "name":"Transition",
-    "path":"folders/Transition.yy",
+    "name":"Shadow of The Retro Castle",
+    "path":"Shadow of The Retro Castle.yyp",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

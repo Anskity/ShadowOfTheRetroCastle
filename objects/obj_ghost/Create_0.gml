@@ -1,4 +1,4 @@
-life = 400;
+life = 500;
 
 invencible = function(){
 	if instance_exists(obj_ghost_xuriken) {
@@ -46,7 +46,6 @@ next_attack = function() {
         array_push(possibilities, 3);
     }
     current_attack = array_rand(possibilities);
-	current_attack = 1;
 	
 	switch current_attack {
 		case 1:

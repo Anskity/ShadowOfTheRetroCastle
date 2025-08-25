@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_wizard_shoot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.057324264,
+  "name":"sfx_wizard_shoot",
+  "parent":{
+    "name":"Wizard",
+    "path":"folders/Wizard.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_wizard_shoot.wav",
+  "type":0,
+  "volume":1.0,
+}

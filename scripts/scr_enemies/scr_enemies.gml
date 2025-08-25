@@ -10,3 +10,5 @@ function attack_wizard() {
 
     return false;
 }
+
+global.defeated_demon = false;

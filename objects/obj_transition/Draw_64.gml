@@ -1,12 +1,17 @@
 // Count up the steps in the animation
 rmtr_steps++;
 
+go = function() {
+    room_goto(rmtr_room);
+    play_sfx(sfx_transition_out);
+}
+
 // If the animation is half way through (which is when the screen will be obscured and the 
 // animation is at its peak) - go to the target room.
 var rmtr_half = floor(rmtr_speed/2);
 if (rmtr_steps == rmtr_half && !rmtr_done) {
 	
-	room_goto( rmtr_room );
+    go();
 	
 } else if (rmtr_steps > rmtr_speed) {
 	
@@ -248,7 +253,7 @@ switch (rmtr_transition) {
 			surface_set_target(rmtr_surface);
 			draw_surface_stretched(application_surface,0,0,_trdw,_trdh);
 			surface_reset_target();
-			room_goto(rmtr_room);
+            go();
 			rmtr_done = 1;
 		} else {
 			surface_set_target(rmtr_surface_2);

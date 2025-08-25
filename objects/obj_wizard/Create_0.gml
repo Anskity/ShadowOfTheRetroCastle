@@ -24,6 +24,8 @@ take_damage = function() {
     }
 
     flash_manager.notify();
+
+    ResolutionManager.screenshake(2);
 }
 
 get_face = function() {

@@ -56,4 +56,5 @@ function room_transition(
 	_rtobj.rmtr_transition = transition_kind;
 	_rtobj.rmtr_speed = transition_speed;
 	
+    play_sfx(sfx_transition_in);
 }

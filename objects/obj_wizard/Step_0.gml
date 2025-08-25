@@ -36,6 +36,8 @@ surface_reset_target();
 
 flash_manager.update();
 
-if keyboard_check_pressed(vk_tab) {
-    ResolutionManager.screenshake(2);
+if life <= 0 {
+    room_transition(room);
 }
+
+

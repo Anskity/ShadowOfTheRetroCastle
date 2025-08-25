@@ -11,6 +11,7 @@ function StaffController(inst) constructor {
             var staff_w = sprite_get_width(spr_staff);
             var shoot_x = staff_x + lengthdir_x(staff_w, __dir);
             var shoot_y = staff_y + lengthdir_y(staff_w, __dir);
+            play_sfx(sfx_wizard_shoot);
 
             instance_create_depth(shoot_x, shoot_y, 0, obj_bullet, {dir: __dir, damage: 10});
             __can_shoot = false;

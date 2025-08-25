@@ -12,6 +12,7 @@ if has_attack {
 }
 
 if life <= 0 {
+    global.defeated_demon = true;
     room_transition(rm_selection);
 }
 
